@@ -1,0 +1,1 @@
+﻿document.write('<link rel="stylesheet" href="static/content/site.css" /><meta charset="us-ascii" />')

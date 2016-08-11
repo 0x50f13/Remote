@@ -1,0 +1,18 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="windows-1252" />
+    <title>cmd.exe</title>
+    <script src="/static/scripts/bootstrap.js"></script>
+    <script src="/static/scripts/loadlibt.js"></script>
+</head>
+<body id="body">
+    <script>
+        function process(cmd) {
+            document.write(loadXMLDoc('/python/envr/cmd/cmd.exe/' + cmd + '<textbox id="cmd"></textbox>'));
+        }
+    </script>
+ ><textarea id="cmd"></textarea><button onclick="process(document.getElementById('cmd').value)">Go!</button>
+</body>
+</html>

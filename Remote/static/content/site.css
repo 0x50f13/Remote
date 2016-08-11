@@ -1,0 +1,74 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/* styles for validation helpers */
+.field-validation-error {
+    color: #b94a48;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+input.input-validation-error {
+    border: 1px solid #b94a48;
+}
+
+input[type="checkbox"].input-validation-error {
+    border: 0 none;
+}
+
+.validation-summary-errors {
+    color: #b94a48;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+.error {
+    border: 4px double black; /* Параметры границы */
+    background: #ff0000; /* Цвет фона */
+    padding: 10px; /* Поля вокруг текста */
+   }
+.info {
+    border: 4px double black; /* Параметры границы */
+    background: #0011cb; /* Цвет фона */
+    padding: 10px; /* Поля вокруг текста */
+   }
+.button {
+   background-image: -webkit-linear-gradient(top, rgba(230,230,230,1) 8%,rgba(200,200,200,1) 100%);
+   background-image:    -moz-linear-gradient(top, rgba(230,230,230,1) 8%,rgba(200,200,200,1) 100%);
+   background-image:     -ms-linear-gradient(top, rgba(230,230,230,1) 8%,rgba(200,200,200,1) 100%);
+   background-image:      -o-linear-gradient(top, rgba(230,230,230,1) 8%,rgba(200,200,200,1) 100%);
+   background-image:         linear-gradient(top, rgba(230,230,230,1) 8%,rgba(200,200,200,1) 100%);
+   -webkit-box-shadow: 2px 0px 2px 0px rgba(0,0,0,1);
+      -moz-box-shadow: 2px 0px 2px 0px rgba(0,0,0,1);
+           box-shadow: 2px 0px 2px 0px rgba(0,0,0,1);
+   border: dashed 4px rgba(15,230,7,1);
+   -webkit-border-radius: 8px;
+      -moz-border-radius: 8px;
+           border-radius: 8px;
+   width: 47px;
+   display: inline-block;
+   color: rgba(0,0,0,1);
+   text-shadow: 1px 1px 0px rgba(0,0,0,1)
+}
+.button:hover {
+}
+.button:active {
+}

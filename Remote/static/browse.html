@@ -1,0 +1,26 @@
+<head>
+    <link rel="stylesheet" href="content/browse.css" />
+    <meta charset="us-ascii" />
+    <script src="/static/scripts/bootstrap.js"></script>
+    <script src="/static/scripts/loadlibt.js"></script>
+
+</head>
+<body>
+    <script>
+    function nav(url){
+        document.body.innerHTML = "";
+        document.write('<form autocomplete="true" id="frm"><input type="text" name="dir" value=""/><input type="submit" value="->"/></form>')
+        document.write('<form action="/upoload/Users"><input type="file" /></form>')
+        loadXMLDoc(url);
+    }
+    </script>
+    <noscript>
+        <div class="error" title="Error while loading this page"><h2>Error!</h2><b>You should to open this page with javascript!</b></div>
+    </noscript>
+
+    <form autocomplete="true" id="frm" >C:\<input type="text" name="dir" value="/"/></form>
+    <button onclick="nav('/dir/'+document.getElementById('frm')['dir'].value)">-></button>
+    <form action="/upoload/Users"><input type="file" /></form>
+
+    <script>loadXMLDoc("/dir/Users")</script>
+</body>
